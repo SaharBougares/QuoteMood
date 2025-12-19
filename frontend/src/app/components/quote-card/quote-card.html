@@ -1,0 +1,9 @@
+<div class="card" *ngIf="quote">
+  <p class="text">“{{ quote.text }}”</p>
+  <p class="author">— {{ quote.author }}</p>
+
+  <div class="actions">
+    <button (click)="copy()">Copier</button>
+    <button (click)="save()">⭐ Favori</button>
+  </div>
+</div>

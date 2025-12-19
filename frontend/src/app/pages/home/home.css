@@ -1,0 +1,19 @@
+.hero{ display:flex; flex-direction:column; gap: 10px; }
+h1{ margin: 0; font-size: 34px; letter-spacing: -.6px; }
+.sub{ margin: 0; opacity:.7; }
+.toolbar{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 6px; }
+.pill{
+  border: 1px solid rgba(0,0,0,.14);
+  padding: 10px 14px; border-radius: 999px;
+  background: #fff; cursor:pointer;
+}
+.pill.active{
+  background:#111; color:#fff; border-color:#111;
+}
+.cta{
+  margin-left:auto;
+  border: none; padding: 10px 16px; border-radius: 12px;
+  background:#111; color:#fff; cursor:pointer;
+}
+.hint{ margin: 0; opacity:.7; }
+.error{ margin: 0; color:#d32f2f; }

@@ -1,0 +1,15 @@
+<section class="page">
+  <h2>Favoris</h2>
+
+  <p class="empty" *ngIf="(favorites$ | async)?.length === 0">Aucun favori pour le moment.</p>
+
+  <div class="grid" *ngIf="(favorites$ | async) as favorites">
+    <div class="card" *ngFor="let q of favorites">
+      <p class="text">“{{ q.text }}”</p>
+      <p class="author">— {{ q.author }} <span class="mood">({{ q.mood }})</span></p>
+      <button type="button" class="danger" (click)="remove(q)">Supprimer</button>
+    </div>
+  </div>
+
+  <a routerLink="/" class="back">← Retour</a>
+</section>

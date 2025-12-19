@@ -1,0 +1,16 @@
+.topbar{
+  position: sticky; top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.75);
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 14px 18px;
+}
+.brand{ font-weight: 800; letter-spacing: .2px; }
+.nav{ display:flex; gap: 12px; }
+.nav a{
+  text-decoration:none; color:#111; opacity:.75;
+  padding: 8px 10px; border-radius: 10px;
+}
+.nav a.active{ opacity:1; background: rgba(0,0,0,.06); }
+.container{ max-width: 960px; margin: 26px auto; padding: 0 16px; }

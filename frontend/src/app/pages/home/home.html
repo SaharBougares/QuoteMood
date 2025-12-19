@@ -1,0 +1,17 @@
+<section class="hero">
+  <h1>QuoteMood</h1>
+  <p class="sub">Choisis ton mood, génère une citation, sauvegarde tes favoris.</p>
+
+  <div class="toolbar">
+    <button type="button" class="pill" [class.active]="mood==='motivation'" (click)="mood='motivation'">Motivation</button>
+    <button type="button" class="pill" [class.active]="mood==='stress'" (click)="mood='stress'">Stress</button>
+    <button type="button" class="pill" [class.active]="mood==='focus'" (click)="mood='focus'">Focus</button>
+
+    <button type="button" class="cta" (click)="generate()">Random quote</button>
+  </div>
+
+  <p *ngIf="loading" class="hint">Chargement...</p>
+  <p *ngIf="error" class="error">{{ error }}</p>
+
+  <app-quote-card [quote]="quote"></app-quote-card>
+</section>

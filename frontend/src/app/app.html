@@ -1,0 +1,11 @@
+<header class="topbar">
+  <div class="brand">QuoteMood</div>
+  <nav class="nav">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/favorites" routerLinkActive="active">Favoris</a>
+  </nav>
+</header>
+
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
